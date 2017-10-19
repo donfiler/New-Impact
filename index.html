@@ -5,14 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="marketing consulting and responsive mobile-friendly web design and conversions to wordpress or bootstrap">
   <meta name="author" content="Don Filer">
   <meta name="keywords" content="impact marketing,web design,responsive web development,marketing consultant,php developer,content management,santa rosa,sonoma county,wordpress developer,blogger">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
   <title>Webdoc - Don Filer - Web Design</title>
+
+      <style>
+  #section-1 {
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  #section-2 {
+    animation-delay: 2s;
+  }
+
+  #section-3 {
+    animation-delay: 2s;
+  }
+  </style>
+
   <script>
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -89,18 +107,22 @@
   </nav>
 <!-- Jumbotron -->
   <div class="container p-0">
-    <div class="jumbotron bg-light mt-0 p-2 !important">
+    <div class="animated slideInDown jumbotron bg-primary text-light my-0 p-4 !important">
       <h1><img alt="Brand" src="img/impact.png" /> Marketing<small>  <em>and</em> web design</small></h1>
-      <br/>
-      <div class="jumbotron bg-primary text-light my-0 p-5">
-        <h1>Welcome!</h1>
+
+  <section id="section-1" class="animated slideInRight bg-faded">
+    <h1 class="display-3">Welcome!</h1>
+
         <h4>We're an awesome company who creates virtual things for portable devices. We specialize in bringing your web sites up to today's standards and making them &quot;mobile friendly.&quot; </h4>
+
         <h3 align="center">(707) 217-8457 </h3>
+      </section>
       </div>
     </div>
-  </div>
+
   <!-- container -->
-  <div class="container">
+  <div class="container py-4">
+    <section id="section-3" class="animated slideInUp bg-faded">
     <div class="row">
       <div class="col-md-4 col-sm-4">
         <div class="card">
@@ -130,6 +152,7 @@
       </div>
     </div>
   </div>
+</section>
 <!-- Home Section-->
   <section id="home" class="py-5 bg-light">
     <div class="container">
@@ -282,7 +305,7 @@
               <li><i class="fa fa-pencil "></i>
                 <a href="https://impactmarketingconsultant.wordpress.com/" target="blank">Impact Marketing</a></li>
               <li><i class="fa fa-pencil "></i>
-                <a href="https://mobilefriendlywebdesign.com/" target="blank">Responsisve Web Design</a></li>
+                <a href="https://mobilefriendlywebdesign.wordpress.com/" target="blank">Responsisve Web Design</a></li>
             </ul>
             <br/> Go to: <a href="http://donfiler.us" target="_blank">donfiler.us</a></p>
         </div>
@@ -357,6 +380,20 @@
     </div>
   </div>
   <script src="js/jquery.min.js"></script>
+  <script>
+src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"
+</script>
+
+<script> {
+    // Animate
+  function animate(element, animation) {
+    $(element).addClass('animated ' + animation);
+    var wait = setTimeout(function() {
+      $(element).removeClass('animated ' + animation);
+    }, 1000);
+  }
+}
+</script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
