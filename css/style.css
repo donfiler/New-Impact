@@ -17,9 +17,26 @@ footer {
     color: white;
     text-decoration: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 748px) {
   body {
     padding-top: 100px;
     /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */ }
   .navbar-fixed-top .navbar-brand {
     padding: 15px 0; } }
+
+@media (max-width:575px) {
+  body {
+    width: 100%;
+  }
+  nav {
+    width: 58%;
+  }
+}
+
+@media (max-width:425px) {
+  h1, h2, p {
+    font-size: .75rem !important;
+  }
+}
+
+
