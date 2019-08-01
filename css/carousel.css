@@ -22,6 +22,12 @@ body {
     margin-bottom: 4rem;
 }
 
+h1.display-4.text-left.my-4,
+h1.display-4.text-center.my-4,
+h1.display-4.text-right.my-4 {
+    font-size: 2em;
+}
+
 
 /* Since positioning the image, we need to help out the caption */
 
@@ -91,18 +97,48 @@ body {
 
 @media (min-width: 40em) {
     /* Bump up size of carousel content */
+    img.first-slide.img-responsive img.second-slide.img-responsive,
+    img.third-slide.img-responsive {
+        width: cover;
+    }
     .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
         line-height: 1.4;
+    }
+    h1.display-4.text-left.my-4,
+    h1.display-4.text-center.my-4,
+    h1.display-4.text-right.my-4 {
+        font-size: 2em;
     }
     .featurette-heading {
         font-size: 50px;
     }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 768) {
+    img.first-slide.img-responsive img.second-slide.img-responsive,
+    img.third-slide.img-responsive {
+        width: cover;
+    }
     .featurette-heading {
         margin-top: 7rem;
+    }
+    h1.display-4.text-left.my-4,
+    h1.display-4.text-center.my-4,
+    h1.display-4.text-right.my-4 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    img.first-slide.img-responsive img.second-slide.img-responsive,
+    img.third-slide.img-responsive {
+        width: cover;
+    }
+    h1.display-4.text-left.my-4,
+    h1.display-4.text-center.my-4,
+    h1.display-4.text-right.my-4 {
+        font-size: 2em;
     }
 }
