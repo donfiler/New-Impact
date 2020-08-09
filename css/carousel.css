@@ -49,7 +49,7 @@ h1.display-4.text-right.my-4 {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
+    height: auto;
 }
 
 
